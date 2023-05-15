@@ -13,7 +13,7 @@ let player1TotalScore = 0;
 let player2TotalScore = 0;
 
 newGame.addEventListener("click", () => {
-  diceImg.src = `dice-5.png`;
+  diceImg.src = `./img/dice-5.png`;
   player1TotalScore = 0;
   player2TotalScore = 0;
   player1Score.textContent = 0;
@@ -30,7 +30,7 @@ newGame.addEventListener("click", () => {
 btnRoll.addEventListener("click", () => {
   let randomDice = Math.floor(Math.random() * 6) + 1;
   console.log(randomDice);
-  diceImg.src = `dice-${randomDice}.png`;
+  diceImg.src = `./img/dice-${randomDice}.png`;
   if (randomDice !== 1) {
     currentScore += randomDice;
     console.log(currentScore);
